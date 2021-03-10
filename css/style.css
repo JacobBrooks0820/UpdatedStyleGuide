@@ -295,3 +295,131 @@ footer {
 .secondary-6 {
     background: #F09C1F;
 }
+
+/* Typography Page Specifics
+--------------------------------------- */
+.typography .row {
+    margin-bottom: 48px;
+}
+.typography .row h1,
+.typography .row h2,
+.typography .row h3,
+.typography .row h4,
+.typography .row h5,
+.typography .row h6 {
+    margin: 0;
+}
+
+/* Typography
+-------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+h1 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 42px;
+    line-height: 1.25;
+}
+h3 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+h4 {
+    font-size: 30px;
+    line-height: 1.35;
+}
+h5 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+h6 {
+    font-size: 16px;
+    line-height: 1.6;
+}
+h1.mobile {
+    font-size: 40px;
+}
+h2.mobile {
+    font-size: 36px;
+}
+h3.mobile {
+    font-size: 30px;
+}
+h4.mobile {
+    font-size: 24px;
+}
+h5.mobile {
+    font-size: 18px;
+}
+h6.mobile {
+    font-size: 16px;
+}
+@media (max-width: 550px) {
+    h1 {
+        font-size: 40px;
+    }
+     h2 {
+        font-size: 36px;
+    }
+     h3 {
+        font-size: 30px;
+    }
+     h4 {
+        font-size: 24px;
+    }
+     h5 {
+        font-size: 18px;
+    }
+     h6 {
+        font-size: 16px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+hr {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    border-width: 0;
+    border-top: 1px solid #E1E1E1;
+}
+p.lead {
+    font-size: 20px;
+    line-height: 1.6;
+}
+p.italic {
+    font-style: italic;
+}
+/* Links
+---------------------------- */
+a {
+    color: #32C3F0;
+    text-decoration: none;
+}
+a:hover {
+    color: #2499BD;
+    text-decoration: none;
+}
+/* Blockquote
+--------------------------- */
+blockquote {
+    border-left: 4px solid #7453EF;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-left: 0;
+    padding: 8px 0 8px 36px;
+}
+
+/* Lists
+----------------------------- */
+ul {
+    list-style: disc inside;
+}
+ol {
+    list-style: decimal inside;
+}
