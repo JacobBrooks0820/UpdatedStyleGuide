@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Basic Page Needs
+------------------------ -->
+    <meta charset="utf-8">
+    <title>{Jacob Fiegle} - Components</title>
+    
+    <!-- Mobile Specific Metas
+-------------------------- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS
+------------------------- -->
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    </head>
+<body class="components" id="main">
+    
+    <nav>
+        <div class="container">
+            <div class="logo four columns">
+                <a href="/">Jacob Fiegle</a>
+            </div>
+            <div class="topnav eight columns">
+                <ul>
+                    <li><a href="layouts.html">Layouts</a></li>
+                     <li><a href="colors.html">Colors</a></li>
+                     <li><a href="typography.html">Typography</a></li>
+                     <li><a href="components.html">Components</a></li>
+                     <li><a href="media.html">Media</a></li>
+                     <li class="mobile"><a><span style="cursor:pointer" onclick="openNav()">&#9776; Menu</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="slidenav" class="slidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="layouts.html">Layouts</a>
+        <a href="colors.html">Colors</a>
+        <a href="typography.html">Typography</a>
+        <a href="components.html">Components</a>
+        <a href="media.html">Media</a>
+    </div>
+    
+    <!-- Primary Page Layout
+-------------------------- -->
+    <div class="container">
+        
+        <ul class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li>Components</li>
+        </ul>
+        
+        <h2>Components</h2>
+        <p class="lead">Here are some elements you'll commonly use throughout web projects you'll have.</p>
+        
+        <h2>Form Elements</h2>
+        <div class="row">
+            <div class="six columns">
+                <label>Text Field</label>
+                <input type="text" placeholder="Placeholder Text">
+            
+            </div>
+            <div class="six columns">
+                <label>Select List</label>
+                <select>
+                    <option value="" selected="selected">- Select -</option>
+                    <option value="1">option 1</option>
+                    <option value="2">option 2</option>
+                </select>
+            </div>
+            
+            <label>Text Area</label>
+            <textarea placeholder="Placeholder Text"></textarea>
+        </div>
+        
+        <div class="row">
+            <div class="six columns">
+                <label>Radio Buttons</label>
+                <div class="radio-checkbox">
+                    <input type="radio"><label>Radio Button 1</label>
+                
+                </div>
+                <div class="radio checkbox">
+                    <input type="radio"><label>Radio Button 2</label>
+                
+                </div>
+            </div>
+            <div class="six columns">
+                <label>Checkboxes</label>
+                <div class="radio-checkbox">
+                    <input type="checkbox"><label>Checkbox 1</label>
+                </div>
+                <div class="radio-checkbox">
+                    <input type="checkbox"><label>Checkbox 2</label>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Buttons</h2>
+        <div class="row button-row">
+            <div class="three columns">
+                <a class="button" href="#">Solid</a>
+            </div>
+            <div class="three columns">
+                <a class="button hover" href="#">Solid - Hover</a>
+            </div>
+            <div class="three columns"></div>
+            <div class="three columns"></div>
+        </div>
+        <br>
+        <div class="row button-row">
+            <div class="three columns">
+                <a class="button outline" href="#">Outline</a>
+            </div>
+            <div class="three columns">
+                <a class="button outline hover" href="#">Outline - Hover</a>
+            </div>
+            <div class="three columns"></div>
+            <div class="three columns"></div>
+        </div>
+        
+        <h2>Table</h2>
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Sex</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+            <tbody>
+                <tr>
+                <td>John John Florence</td>
+                    <td>26</td>
+                    <td>Male</td>
+                    <td>North Shore, Oahu, Hawaii</td>
+                </tr>
+                <tr>
+                    <td>Jordy Smith</td>
+                    <td>31</td>
+                    <td>Male</td>
+                    <td>Durban, South Africa</td>
+                </tr>
+                <tr>
+                <td>Sage Erickson</td>
+                <td>28</td>
+                <td>Female</td>
+                <td>Ojai, California, U.S.A.</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h2>Tabs</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Tab1')" id="defaultOpen">Tab 1</button>
+            <button class="tablinks" onclick="openCity(event, 'Tab2')">Tab 2</button>
+             <button class="tablinks" onclick="openCity(event, 'Tab3')">Tab 3</button>
+        </div>
+        
+        <div id="Tab1" class="tabcontent">
+            <h3>Tab 1</h3>
+            <p>Ut rhoncus nunc at massa porttitor lobortis. Sed nunc purus, luctus eget consectetur id, consectetur vel tellus. Maecenas ac feugiat neque. Vestibulum laoreet pellentesque ornare. Nullam ut sollicitudin velit. Integer tempor elit vitae iaculis rutrum. Etiam volutpat turpis ante. Donec et eros magna. In ut tempus nulla. Maecenas at tristique purus. Praesent a pretium nibh.</p>
+        </div>
+        
+        <div id="Tab2" class="tabcontent">
+            <h3>Tab 2</h3>
+            <p>Ut rhoncus nunc at massa porttitor lobortis. Sed nunc purus, luctus eget consectetur id, consectetur vel tellus. Maecenas ac feugiat neque. Vestibulum laoreet pellentesque ornare. Nullam ut sollicitudin velit. Integer tempor elit vitae iaculis rutrum. Etiam volutpat turpis ante. Donec et eros magna. In ut tempus nulla. Maecenas at tristique purus. Praesent a pretium nibh.</p>
+        </div>
+         <div id="Tab3" class="tabcontent">
+            <h3>Tab 3</h3>
+            <p>Ut rhoncus nunc at massa porttitor lobortis. Sed nunc purus, luctus eget consectetur id, consectetur vel tellus. Maecenas ac feugiat neque. Vestibulum laoreet pellentesque ornare. Nullam ut sollicitudin velit. Integer tempor elit vitae iaculis rutrum. Etiam volutpat turpis ante. Donec et eros magna. In ut tempus nulla. Maecenas at tristique purus. Praesent a pretium nibh.</p>
+        </div>
+        
+        <h2>Accordion</h2>
+        <div class="row">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+              <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            
+              <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <h2>Expanding Grid</h2>
+            <div class="row expanding-grid">
+                <div class="two columns" onclick="openTab('b1');">
+                    <img class="headshot secondary-3" src="images/hs-kelly.png">
+                    <h6>Kelly Slater</h6>
+            <a onclick="openTab('b1');">Learn More</a>
+                </div>
+            <div class="two columns" onclick="openTab('b2');">
+            <img class="headshot secondary-5" src="images/hs-sally.png">
+                <h6>Sally Fitzgibbons</h6>
+                <a onclick="openTab('b2');">Learn More</a>
+                </div>
+                <div class="two columns" onclick="openTab('b3');">
+                <img class="headshot primary-1" src="images/hs-jordy.png">
+                    <h6>Jordy Smith</h6>
+                    <a onclick="openTab('b3');">Learn More</a>
+                </div>
+                 <div class="two columns" onclick="openTab('b4');">
+                     <img class="headshot primary-2" src="images/hs-silvana.png">
+                     <h6>Silvana Lima</h6>
+                    <a onclick="openTab('b4');">Learn More</a>
+                </div>
+                  <div class="two columns" onclick="openTab('b5');">
+                      <img class="headshot secondary-4" src="images/hs-john.png">
+                      <h6>John John Florence</h6>
+                      <a onclick="openTab('b5');">Learn More</a>
+                </div>
+                <div class="two columns" onclick="openTab('b6');">
+                      <img class="headshot secondary-6" src="images/hs-sage.png">
+                      <h6>Sage Erickson</h6>
+                      <a onclick="openTab('b6');">Learn More</a>
+                </div>
+        </div>
+        
+        <!-- Full-width columns: (hidden by default) -->
+        <div id="b1" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>Kelly Slater</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>Kelly Slater is the greatest surfer of all time. He has a death grip on nearly every major record in the sport, including his 11 World Titles, 55 career victories, as well as being the youngest and oldest World Champion in men’s history. He ushered in a new era of high-performance surfing when he arrived on the scene in 1990, incorporating intentional fin releases and a m...</p>
+                </div>
+            </div>
+            
+             <div id="b2" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>Sally Fitzgibbons</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>Sally Fitzgibbons was born an athlete. From an early age she decided she wanted to be a champion at something. She played soccer, touch football and cross-country running, and ended up a national champion middle distance runner in High School. For Fitzgibbons, all those sports fed off each other, but ultimately, her love for surfing is what won out. It’s hard...</p>
+                </div>
+            </div>
+                 
+                   <div id="b3" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>Jordy Smith</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>Jordy Smith set off one of the biggest bidding wars in industry history after winning the World Junior Championship in 2006 and the Qualifying Series in 2007. Though he was being lobbied by the likes of Tiger Woods and Michael Jordan to join Nike, he elected to go with O’Neill, who he’s been with ever since. He earned his first two Championship Tour wins in...</p>
+                </div>
+            </div>
+                       
+                        <div id="b4" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>Silvana Lima</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>Silvana Lima is a warrior. There’s no other word to describe a woman with her skill, determination and resilience. She started well behind the line, growing up in a snack-shack on the sand in Paracuaru, Brazil, owned by her parents. She learned to surf on a piece of wood that she adorned with a makeshift fin herself. Her first “real” board was a hand-me...</p>
+                </div>
+            </div>
+                            
+                  <div id="b5" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>John John Florence</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>John John Florence is one of only five surfers in men’s Championship Tour history to clinch his first two World Titles in back-to-back fashion. Mark Richards, Tom Carroll, Tom Curren and the late Andy Irons are the only other members of that elite club. The mild-mannered prodigy from the North Shore of Oahu has been living in the public’s eye since the age of…</p>
+                </div>
+            </div>    
+                      
+                        <div id="b6" class="containerTab" style="display:none;">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <div class="row">    
+                <div class="four columns">
+                    <h3>Sage Erickson</h3>
+                </div>
+                <div class="eight columns">
+                    <h6>Bio</h6>
+                <p>After five years of battling on the Championship Tour Sage Erickson is just beginning to settle in. She notched her first Championship Tour victory in 2017 at the Vans US Open of Surfing and cracked the Top 10 on the Jeep Leaderboard for the second-straight season. She’s come a long way from her early years of struggling at the elite level. Erickson was born in...</p>
+                </div>
+            </div>  
+            </div>
+                      
+        <h2>Cards</h2>              
+                 <div class="row">
+                     <div class="card three columns">
+                         <img class="headshot secondary-3" src="images/hs-kelly.png">
+                         <h5>Kelly Slater</h5>
+                         <h6>United States</h6>
+                    <label>Hometown</label>
+                         <p>Cocoa Beach, Florida, USA</p>
+                     </div>
+                        <div class="card three columns">
+                         <img class="headshot secondary-5" src="images/hs-sally.png">
+                         <h5>Sally Fitzgibbons</h5>
+                         <h6>Australia</h6>
+                    <label>Hometown</label>
+                         <p>Gerroa, New South Wales, Australia</p>
+                     </div>
+                      </div>
+                         <div class="card three columns">
+                         <img class="headshot primary-1" src="images/hs-jordy.png">
+                         <h5>Jordy Smith</h5>
+                         <h6>South Africa</h6>
+                    <label>Hometown</label>
+                         <p>Durban, South Africa</p>
+                     </div>
+                      </div>
+                         <div class="card three columns">
+                         <img class="headshot primary-2" src="images/hs-silvana.png">
+                         <h5>Silvana Lima</h5>
+                         <h6>Brazil</h6>
+                    <label>Hometown</label>
+                         <p>Paracuru, Brazil</p>
+                     </div>
+                      </div>
+                     
+            <h2>Image Hover Overlay</h2>         
+                <div class="row">
+                    <div class="four columns image-container">
+                    <img src="images/overlay-01.jpg">
+                        <div class="overlay">
+                            <div class="text">"Sometimes in the morning, when it's a good surf, I go out there, and I don't feel like it's a bad world."</div>
+                        </div>
+                    </div>
+                     </div>
+                    
+                     <div class="four columns image-container">
+                    <img src="images/overlay-02.jpg">
+                        <div class="overlay">
+                            <div class="text">"Surfing's the source. Can change your life. Swear to God."</div>
+                         </div>
+                    </div>
+                     </div>
+                    
+                      <div class="four columns image-container">
+                    <img src="images/overlay-03.jpg">
+                        <div class="overlay">
+                            <div class="text">"Thank God for a few free waves."</div>
+                         </div>
+                    </div>
+                </div>
+         </div>
+                            </div>
+                      
+    <footer>
+        <div class="container">
+            <p>{Jacob Fiegle | Copyright {2021}</p>
+        </div>        
+    </footer>
+<!-- End Document
+------------------------ -->
+                            <script src="./script.js"></script> 
+    </body>
+</html>
+        
+                        
+                      
